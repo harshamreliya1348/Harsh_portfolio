@@ -99,6 +99,7 @@ const Contect = (props) => {
                 <div className="flex flex-col gap-1 ml-2">
                   <h2 className="font-bold">{info.title}</h2>
                   <a
+                    className="break-all"
                     href={
                       info.title == "Email"
                         ? "mailto:harshamreliya1348@gmail.com"
@@ -127,7 +128,9 @@ const Contect = (props) => {
                 <img src={plateform.icon} className=" h-8 w-8 rounded-full " />
                 <div className="flex flex-col gap-1 ml-2">
                   <h2 className="">{plateform.title}</h2>
-                  <a href={plateform.detail}>{plateform.detail}</a>
+                  <a className="break-all" href={plateform.detail}>
+                    {plateform.detail}
+                  </a>
                 </div>
               </div>
             );

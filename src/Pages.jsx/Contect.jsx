@@ -6,13 +6,17 @@ import github_logo_icon from "../assets/logos/github_logo_icon.webp";
 import linkedin_logo from "../assets/logos/linkedin_logo.avif";
 import insta_logo from "../assets/logos/insta_logo.webp";
 import Contact_form from "../components/Contact_form";
+import { useInView } from "react-intersection-observer";
 
 const Contect = (props) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
   const textColor = props.dark ? "text-white/90" : "text-gray-600";
   const h1Color = props.dark
     ? " bg-linear-to-tl from-cyan-400 to-blue-500 "
     : "bg-linear-to-tl from-cyan-800 to-blue-600  ";
-
   const ContectInformation = [
     {
       icon: FaEnvelope,
@@ -38,7 +42,7 @@ const Contect = (props) => {
     },
     {
       icon: linkedin_logo,
-      title: "Linkdin",
+      title: "Linkedin",
       detail: "https://www.linkedin.com/in/harsh-amreliya-068475405/",
     },
     // {
@@ -54,14 +58,18 @@ const Contect = (props) => {
           <span className="border-b-3 border-blue-800">C</span>ONTACT
           <span className="text-blue-800"> ME</span>
         </h2>
-        <TypeAnimation
-          sequence={["Let's Work Together", 5000]}
-          wrapper="h1"
-          speed={50}
-          cursor={true}
-          repeat={0}
-          className={`text-3xl mt-2 font-bold bg-clip-text text-transparent whitespace-nowrap ${h1Color}`}
-        ></TypeAnimation>
+        <div ref={ref}>
+          {inView && (
+            <TypeAnimation
+              sequence={["Let's Work Together", 5000]}
+              wrapper="h1"
+              speed={50}
+              cursor={true}
+              repeat={0}
+              className={`text-3xl mt-2 font-bold bg-clip-text text-transparent whitespace-nowrap ${h1Color}`}
+            ></TypeAnimation>
+          )}
+        </div>
         <p
           className={`font-bold text-sm leading-relaxed mt-5 md:w-[77%] w-[89%] ${textColor} `}
         >

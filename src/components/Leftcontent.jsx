@@ -6,7 +6,13 @@ import { FaPhone } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import PlateForms from "../others/PlateForms";
 import { Link } from "react-router";
+import { useInView } from "react-intersection-observer";
+
 const Leftcontent = (props) => {
+  const { ref, inView } = useInView({
+    triggrOnce: true,
+    threshold: 0.3,
+  });
   const h1Color = props.dark
     ? " bg-linear-to-tl from-cyan-400 to-blue-500 "
     : "bg-linear-to-tl from-cyan-800 to-blue-600  ";
@@ -36,18 +42,20 @@ const Leftcontent = (props) => {
           Frontend Developer
         </h2>
       </div>
-      <div className="cursor-default h-10">
-        <TypeAnimation
-          sequence={[
-            "I build responsive and user-friendly web applications using React, JavaScript, and modern web technologies.",
-            5000,
-          ]}
-          wrapper="p"
-          speed={70}
-          cursor={true}
-          repeat={0}
-          className="leading-tight font-bold"
-        />
+      <div ref={ref} className="cursor-default h-10">
+        {inView && (
+          <TypeAnimation
+            sequence={[
+              "I build responsive and user-friendly web applications using React, JavaScript, and modern web technologies.",
+              5000,
+            ]}
+            wrapper="p"
+            speed={70}
+            cursor={true}
+            repeat={Infinity}
+            className="leading-tight font-bold"
+          />
+        )}
       </div>
       <div className="flex  gap-5 mt-5  md:gap-20 md:mt-2 lg:mt-9.5">
         <Link

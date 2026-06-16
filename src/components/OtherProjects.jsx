@@ -4,6 +4,8 @@ import github_logo_icon from "../assets/logos/github_logo_icon.webp";
 import html_logo_icon from "../assets/logos/html_logo_icon.png";
 import css_logo from "../assets/logos/css_logo.jpeg";
 import js_logo from "../assets/logos/js_logo.jpeg";
+import react_logo from "../assets/logos/react_logo.jpeg";
+import weather_icon from "../assets/logos/weather-icon.png";
 import weather_page from "/src/assets/project_photos/weather_page.png";
 import quize_page from "/src/assets/project_photos/quize_page.png";
 import rock_page from "/src/assets/project_photos/rock_page.png";
@@ -20,9 +22,9 @@ const OtherProjects = (props) => {
       title: "Portfolio Website",
       description:
         "A modern developer portfolio built with React and Tailwind CSS featuring projects, skills, and contact information.",
-      tech_icons: [js_logo, html_logo_icon, css_logo],
-      live_url: "",
-      github_url: "",
+      tech_icons: [js_logo, html_logo_icon, css_logo, react_logo],
+      live_url: "https://harsh-portfolio-three-blue.vercel.app/",
+      github_url: "https://github.com/harshamreliya1348/Harsh_portfolio",
     },
     {
       img_url: currency_page,
@@ -38,7 +40,7 @@ const OtherProjects = (props) => {
       title: "Weather App",
       description:
         "A weather application that provides real-time weather updates using a weather API with a clean and responsive UI.",
-      tech_icons: [js_logo, html_logo_icon, css_logo],
+      tech_icons: [js_logo, html_logo_icon, css_logo, weather_icon],
       live_url: "https://weather-cheaking.vercel.app/",
       github_url: "https://github.com/harshamreliya1348/weather_cheaking",
     },

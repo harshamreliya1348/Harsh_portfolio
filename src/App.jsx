@@ -53,7 +53,7 @@ export const App = () => {
 
   return (
     <div
-      className={` h-screen overflow-auto ${mode.background} ${mode.textColor}`}
+      className={` flex flex-col h-screen w-full gap-5 overflow-auto ${mode.background} ${mode.textColor}`}
     >
       <Navbaar changeMode={changeMode} dark={dark} Shadow={Shadow} />
 

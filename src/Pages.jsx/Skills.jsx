@@ -25,7 +25,7 @@ const Skills = (props) => {
 
       <div
         ref={ref}
-        className="md:w-95 w-92 h-20 cursor-default ml-4 md:ml-2 mt-5 md:mt-8font-semibold"
+        className="md:w-95 w-88 h-20 cursor-default ml-4 md:ml-2 mt-5 md:mt-8font-semibold"
       >
         {inView && (
           <TypeAnimation

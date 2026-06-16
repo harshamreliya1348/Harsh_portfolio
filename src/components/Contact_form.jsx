@@ -63,7 +63,7 @@ const Contact_form = (props) => {
             }}
             type="text"
             placeholder="Your Name"
-            className="outline-none w-full font-bold "
+            className="outline-none w-full font-bold placeholder:text-gray-400"
           ></input>
         </div>
         <div
@@ -79,7 +79,7 @@ const Contact_form = (props) => {
             type="email"
             required
             placeholder="Your Email"
-            className="outline-none w-full font-bold"
+            className="outline-none w-full font-bold "
           ></input>
         </div>
         <div
@@ -94,7 +94,7 @@ const Contact_form = (props) => {
             }}
             type="text"
             placeholder="Subject"
-            className="outline-none w-full font-bold"
+            className="outline-none w-full font-bold placeholder:text-gray-400"
           ></input>
         </div>
         <div
@@ -109,7 +109,7 @@ const Contact_form = (props) => {
             }}
             rows={10}
             placeholder="Your Massage"
-            className="outline-none w-full font-bold"
+            className="outline-none w-full font-bold placeholder:text-gray-400"
           ></textarea>
         </div>
         <button className="flex mt-5 gap-4 items-center justify-center md:w-2/3 w-full font-bold text-white border border-purple-500/30 cursor-pointer active:scale-95 rounded p-2 bg-linear-to-r from-purple-600 via-violet-600 to-pink-600 shadow-lg shadow-purple-500/25">

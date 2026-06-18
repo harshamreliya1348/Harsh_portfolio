@@ -23,8 +23,7 @@ const OtherProjects = (props) => {
       description:
         "A modern developer portfolio built with React and Tailwind CSS featuring projects, skills, and contact information.",
       tech_icons: [js_logo, html_logo_icon, css_logo, react_logo],
-      live_url:
-        "https://6a33ecabec77fcb11056429a--willowy-crisp-04756a.netlify.app/",
+      live_url: "https://willowy-crisp-04756a.netlify.app/",
       github_url: "https://github.com/harshamreliya1348/Harsh_portfolio",
     },
     {

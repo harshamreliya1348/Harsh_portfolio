@@ -74,7 +74,7 @@ const Main_project = (props) => {
         </div>
         <div className="flex md:flex-row flex-col mt-2 gap-5">
           <a
-            href="https://employee-task-manager-psi.vercel.app/"
+            href=""
             target="_blank"
             id="btn"
             className="flex md:w-1/3 justify-center w-full bg-cyan-400 font-bold text-black items-center gap-2"

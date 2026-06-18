@@ -23,7 +23,7 @@ const OtherProjects = (props) => {
       description:
         "A modern developer portfolio built with React and Tailwind CSS featuring projects, skills, and contact information.",
       tech_icons: [js_logo, html_logo_icon, css_logo, react_logo],
-      live_url: "https://harsh-portfolio-three-blue.vercel.app/",
+      live_url: "",
       github_url: "https://github.com/harshamreliya1348/Harsh_portfolio",
     },
     {
@@ -32,7 +32,7 @@ const OtherProjects = (props) => {
       description:
         "A real-time currency converter that allows users to quickly convert between different currencies using live exchange rates.",
       tech_icons: [js_logo, html_logo_icon, css_logo],
-      live_url: "https://currency-converter-gules-mu.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/Currency_Converter/",
       github_url: "https://github.com/harshamreliya1348/Currency_Converter",
     },
     {
@@ -41,7 +41,7 @@ const OtherProjects = (props) => {
       description:
         "A weather application that provides real-time weather updates using a weather API with a clean and responsive UI.",
       tech_icons: [js_logo, html_logo_icon, css_logo, weather_icon],
-      live_url: "https://weather-cheaking.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/weather_cheaking/",
       github_url: "https://github.com/harshamreliya1348/weather_cheaking",
     },
 
@@ -51,7 +51,7 @@ const OtherProjects = (props) => {
       description:
         "A simple and responsive todo application with task management and local storage support.",
       tech_icons: [js_logo, html_logo_icon, css_logo],
-      live_url: "https://to-do-list-rho-sable.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/To-Do_list/",
       github_url: "https://github.com/harshamreliya1348/To-do_list",
     },
 
@@ -61,7 +61,7 @@ const OtherProjects = (props) => {
       description:
         "A responsive Amazon-inspired landing page showcasing modern UI design, product sections, and smooth user experience.",
       tech_icons: [html_logo_icon, css_logo],
-      live_url: "https://amazon-demo-lac.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/amazon_demo/",
       github_url: "https://github.com/harshamreliya1348/amazon_demo",
     },
 
@@ -71,16 +71,17 @@ const OtherProjects = (props) => {
       description:
         "An interactive Q&A application where users can view questions and answers in a clean and user-friendly interface.",
       tech_icons: [js_logo, html_logo_icon, css_logo],
-      live_url: "https://quize-app-orpin.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/quize_app/",
       github_url: "https://github.com/harshamreliya1348/quize_app",
     },
+
     {
       img_url: rock_page,
       title: "Rock paper scissors",
       description:
         "An interactive Rock Paper Scissors game built with JavaScript featuring score tracking and dynamic gameplay.",
       tech_icons: [js_logo, html_logo_icon, css_logo],
-      live_url: "https://rock-paper-scissor-sandy-seven.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/rock_paper_scissor/",
       github_url: "https://github.com/harshamreliya1348/rock_paper_scissor",
     },
     {
@@ -89,7 +90,7 @@ const OtherProjects = (props) => {
       description:
         "A classic Tic Tac Toe game with win detection, draw handling, and an intuitive user interface.",
       tech_icons: [js_logo, html_logo_icon, css_logo],
-      live_url: "https://tick-tac-toe-omega.vercel.app/",
+      live_url: "https://harshamreliya1348.github.io/tic_tac_toe/",
       github_url: "https://github.com/harshamreliya1348/tick_tac_toep",
     },
   ];

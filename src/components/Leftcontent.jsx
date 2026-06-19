@@ -77,7 +77,7 @@ const Leftcontent = (props) => {
         </a>
         <a
           onClick={() => {
-            scrollToSection("project");
+            scrollToSection("contect");
           }}
           to="#contect"
           id="btn"

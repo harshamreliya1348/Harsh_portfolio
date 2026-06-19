@@ -13,10 +13,16 @@ const Leftcontent = (props) => {
     triggrOnce: true,
     threshold: 0.3,
   });
+
   const h1Color = props.dark
     ? " bg-linear-to-tl from-cyan-400 to-blue-500 "
     : "bg-linear-to-tl from-cyan-800 to-blue-600  ";
 
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="z-20 w-full md:w-1/2 flex flex-col  gap-5 py-15 md:py-9 md:px-15 px-6 ">
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100/80 backdrop-blur-md border border-green-300 shadow-[0_0_20px_rgba(34,197,94,0.25)]hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300">
@@ -58,22 +64,28 @@ const Leftcontent = (props) => {
         )}
       </div>
       <div className="flex  gap-5 mt-5  md:gap-20 md:mt-2 lg:mt-9.5">
-        <Link
-          to="/projects"
+        <a
+          onClick={() => {
+            scrollToSection("project");
+          }}
+          to="#project"
           id="btn"
           className={`bg-cyan-800 flex gap-3 justify-center items-center text-white font-bold whitespace-nowrap ${props.Shadow}`}
         >
           View Projects
           <FaArrowRight />
-        </Link>
-        <Link
-          to="/contect"
+        </a>
+        <a
+          onClick={() => {
+            scrollToSection("project");
+          }}
+          to="#contect"
           id="btn"
           className={`font-bold bg-red-500 flex gap-3 justify-center items-center text-white whitespace-nowrap ${props.Shadow} `}
         >
           Contect me
           <FaPhone className="rotate-90" />
-        </Link>
+        </a>
       </div>
       <PlateForms />
     </div>

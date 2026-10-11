@@ -57,6 +57,7 @@ const Contact_form = (props) => {
           <FaUser />
           <input
             name="user_name"
+            required
             value={name}
             onChange={(e) => {
               setName(e.target.value);
@@ -72,6 +73,7 @@ const Contact_form = (props) => {
           <FaEnvelope />
           <input
             name="user_email"
+            required
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
@@ -88,6 +90,7 @@ const Contact_form = (props) => {
           <FaTag />
           <input
             name="subject"
+            required
             value={subject}
             onChange={(e) => {
               setSubject(e.target.value);
@@ -102,6 +105,7 @@ const Contact_form = (props) => {
         >
           <FaPencil className="mt-1" />
           <textarea
+            required
             name="description"
             value={description}
             onChange={(e) => {

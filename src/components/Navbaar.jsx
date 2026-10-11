@@ -35,7 +35,12 @@ const Navbaar = (props) => {
           }}
           className="w-11 h-11 rounded-full bg-linear-to-br from-cyan-300 to-blue-500 flex items-center justify-center text-white font-extrabold shadow-[0_0_20px_rgba(34,211,238,0.4)] cursor-default"
         >
-          HA
+          <span className="flex md:block hidden">HA</span>
+          <span className="flex md:hidden block flex-col gap-0.5">
+            <span className="w-5 h-1 bg-white rounded"></span>
+            <span className="w-5 h-1 bg-white rounded"></span>
+            <span className="w-5 h-1 bg-white rounded"></span>
+          </span>
         </h2>
       </div>
       <div className="md:flex hidden w-2/4 justify-between p-1">
